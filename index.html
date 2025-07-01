@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xertob Informatique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+    header {
+      background-color: #101820;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #101820;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    .services, .pcs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #0d3c61;
+    }
+    .formulaire {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #0d3c61;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    button:hover {
+      background-color: #155b8e;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #101820;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Xertob Informatique
+  </header>
+
+  <div class="section">
+    <h2>Nos Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Dépannage à distance</h3>
+        <p>Nettoyage, suppression de virus, réinstallation Windows/macOS, optimisation, installation de logiciels.</p>
+      </div>
+      <div class="card">
+        <h3>Réparation Mac & iPhone</h3>
+        <p>Uniquement par envoi sécurisé. Diagnostic rapide, réparation et retour en suivi.</p>
+      </div>
+      <div class="card">
+        <h3>Conseil & préparation de PC</h3>
+        <p>Je vous aide à choisir un PC, je l’achète pour vous, le configure (logiciels, sécurité, pilotes) et vous le reçoivez prêt à l'emploi.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>PC Prêts à l’Emploi</h2>
+    <div class="pcs">
+      <div class="card">
+        <h3>PC Bureautique - 150€</h3>
+        <p>Dell Optiplex 7040<br>i5 6e gen, 8 Go RAM, SSD 256 Go<br>Windows 10 Pro + logiciels installés</p>
+        <button>Je veux ce PC</button>
+      </div>
+      <div class="card">
+        <h3>PC Bureautique - 250€</h3>
+        <p>HP EliteDesk 800 G3<br>i5 7500, 16 Go RAM, SSD 512 Go<br>Windows 11 + LibreOffice</p>
+        <button>Je veux ce PC</button>
+      </div>
+      <div class="card">
+        <h3>PC Gaming - 450€</h3>
+        <p>Ryzen 5 3600, 16 Go RAM, GTX 1660 Super<br>SSD 512 Go, Windows 10 optimisé<br>Parfait pour Fortnite, Valorant, etc.</p>
+        <button>Je veux ce PC</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Contact / Demande de Service</h2>
+    <form class="formulaire" action="https://formspree.io/f/mnqezpzb" method="POST">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre e-mail" required>
+      <textarea name="message" placeholder="Votre demande ou question" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Xertob Informatique – Site personnel vitrine
+  </footer>
+</body>
+</html>
